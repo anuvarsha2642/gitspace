@@ -19,7 +19,7 @@ import junit.framework.Assert;
 import pageObjects.landingMobilePageObjects;
 import pageObjects.magentoHomePage;
 import utils.base;
-
+//so this project is from guru99 site. Its very helpful.
 public class verifyMobItemSorted extends base{
 	magentoHomePage mhp=new magentoHomePage();
 	
