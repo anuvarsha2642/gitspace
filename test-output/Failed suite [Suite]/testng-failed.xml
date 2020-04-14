@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="none" name="Failed suite [Failed suite [Suite]]" guice-stage="DEVELOPMENT">
+  <test parallel="none" name="Test(failed)(failed)">
+    <classes>
+      <class name="Guru99.verifyMobItemSorted">
+        <methods>
+          <include name="tearDown"/>
+          <include name="verifyItemInMobList"/>
+          <include name="launchingBrowser"/>
+        </methods>
+      </class> <!-- Guru99.verifyMobItemSorted -->
+      <class name="Guru99.verifySonyXperiaPrice">
+        <methods>
+          <include name="launchingBrowser"/>
+        </methods>
+      </class> <!-- Guru99.verifySonyXperiaPrice -->
+    </classes>
+  </test> <!-- Test(failed)(failed) -->
+</suite> <!-- Failed suite [Failed suite [Suite]] -->
