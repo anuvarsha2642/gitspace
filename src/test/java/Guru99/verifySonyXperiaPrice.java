@@ -9,14 +9,14 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import junit.framework.Assert;
-import pageObjects.magentoHomePage;
-import pageObjects.mobileSonyXpheria;
-import pageObjects.sonyXpheriaPage;
+import pageObjects.SonyXpheria;
+import pageObjects.MagentoPage;
+import pageObjects.MobilePage;
 import utils.base;
 
 public class verifySonyXperiaPrice extends base{
-	mobileSonyXpheria msx=new mobileSonyXpheria();
-	sonyXpheriaPage sx=new sonyXpheriaPage(); 
+	MobilePage msx=new MobilePage();
+	
 
 	@Test
 	public void RetrieveSonyXperiaPrice()
@@ -27,11 +27,11 @@ public class verifySonyXperiaPrice extends base{
 	//	System.out.println("price in mobxperiapage"+priceInMobPage);
 		WebElement sonyXperiaImage=msx.getmobSonyXperiaImage(driver);
 		sonyXperiaImage.click();
-		WebElement xperiaPrice=sx.getSonyXperiaPrice(driver);
+		WebElement xperiaPrice=msx.getmobSonyXperiaPrice(driver);
 		String priceInXperiaPage=xperiaPrice.getText();
 		//System.out.println("price in sonyxperiapage"+priceInXperiaPage);
 		Assert.assertEquals("Prices not Matching",priceInMobPage, priceInXperiaPage);
-		driver.close();
+		//driver.close();
 	}
 	
 		

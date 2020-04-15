@@ -4,7 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-public class magentoHomePage {
+public class MagentoPage {
 static By  mobLink=By.xpath("//a[contains(text(),'Mobile')]");
 
 public static WebElement getmobLink(WebDriver driver)
