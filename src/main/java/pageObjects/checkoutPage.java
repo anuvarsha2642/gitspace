@@ -6,8 +6,7 @@ import org.openqa.selenium.WebElement;
 
 public class checkoutPage {
 
-	static By  statusShoppingCart=By.cssSelector(".product-cart-info>.item-msg");
-
+	static By  statusShoppingCart=By.cssSelector(".page-title>h1");
 	
 	public static WebElement getstatusShoppingCart(WebDriver driver)
 		{

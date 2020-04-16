@@ -2,32 +2,32 @@
 <testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-04-15T15:11:29 MST" name="Suite1" finished-at="2020-04-15T15:11:46 MST" duration-ms="17168">
+  <suite started-at="2020-04-15T21:32:05 MST" name="Suite1" finished-at="2020-04-15T21:32:24 MST" duration-ms="18458">
     <groups>
     </groups>
-    <test started-at="2020-04-15T15:11:29 MST" name="all-tests" finished-at="2020-04-15T15:11:46 MST" duration-ms="17168">
+    <test started-at="2020-04-15T21:32:05 MST" name="all-tests" finished-at="2020-04-15T21:32:24 MST" duration-ms="18458">
       <class name="Guru99.verifyMobItemSorted">
-        <test-method is-config="true" signature="launchingBrowser()[pri:0, instance:Guru99.verifyMobItemSorted@268f106e]" started-at="2020-04-15T15:11:29 MST" name="launchingBrowser" finished-at="2020-04-15T15:11:40 MST" duration-ms="11186" status="PASS">
+        <test-method is-config="true" signature="launchingBrowser()[pri:0, instance:Guru99.verifyMobItemSorted@268f106e]" started-at="2020-04-15T21:32:05 MST" name="launchingBrowser" finished-at="2020-04-15T21:32:16 MST" duration-ms="11203" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchingBrowser -->
-        <test-method signature="verifyMobTitlePage()[pri:1, instance:Guru99.verifyMobItemSorted@268f106e]" started-at="2020-04-15T15:11:40 MST" name="verifyMobTitlePage" finished-at="2020-04-15T15:11:42 MST" duration-ms="1820" status="PASS">
+        <test-method signature="verifyMobTitlePage()[pri:1, instance:Guru99.verifyMobItemSorted@268f106e]" started-at="2020-04-15T21:32:17 MST" name="verifyMobTitlePage" finished-at="2020-04-15T21:32:18 MST" duration-ms="1604" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyMobTitlePage -->
-        <test-method signature="verifyItemInMobList()[pri:2, instance:Guru99.verifyMobItemSorted@268f106e]" started-at="2020-04-15T15:11:42 MST" name="verifyItemInMobList" finished-at="2020-04-15T15:11:43 MST" duration-ms="1013" status="PASS">
+        <test-method signature="verifyItemInMobList()[pri:2, instance:Guru99.verifyMobItemSorted@268f106e]" started-at="2020-04-15T21:32:18 MST" name="verifyItemInMobList" finished-at="2020-04-15T21:32:19 MST" duration-ms="889" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyItemInMobList -->
       </class> <!-- Guru99.verifyMobItemSorted -->
       <class name="Guru99.verifySonyXperiaPrice">
-        <test-method signature="RetrieveSonyXperiaPrice()[pri:0, instance:Guru99.verifySonyXperiaPrice@6e9a5ed8]" started-at="2020-04-15T15:11:43 MST" name="RetrieveSonyXperiaPrice" finished-at="2020-04-15T15:11:44 MST" duration-ms="1606" status="PASS">
+        <test-method signature="RetrieveSonyXperiaPrice()[pri:0, instance:Guru99.verifySonyXperiaPrice@6e9a5ed8]" started-at="2020-04-15T21:32:19 MST" name="RetrieveSonyXperiaPrice" finished-at="2020-04-15T21:32:21 MST" duration-ms="1582" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- RetrieveSonyXperiaPrice -->
       </class> <!-- Guru99.verifySonyXperiaPrice -->
       <class name="Guru99.verifySonyXpheriaQuantity">
-        <test-method signature="verifyingQuantityOverCapacity()[pri:0, instance:Guru99.verifySonyXpheriaQuantity@7e057f43]" started-at="2020-04-15T15:11:44 MST" name="verifyingQuantityOverCapacity" finished-at="2020-04-15T15:11:46 MST" duration-ms="1487" status="PASS">
+        <test-method signature="verifyingQuantityOverCapacity()[pri:0, instance:Guru99.verifySonyXpheriaQuantity@7e057f43]" started-at="2020-04-15T21:32:21 MST" name="verifyingQuantityOverCapacity" finished-at="2020-04-15T21:32:24 MST" duration-ms="3124" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyingQuantityOverCapacity -->
