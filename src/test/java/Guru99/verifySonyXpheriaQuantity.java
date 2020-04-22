@@ -28,7 +28,7 @@ public class verifySonyXpheriaQuantity extends base {
 		String errorMsg=sxp.getErrorMsg(driver).getText();		
 		System.out.println("The error msg obtainetd is "+errorMsg);
 		try {
-			Assert.assertEquals("Some of the products cannot be ordered in requested ",errorMsg);
+			Assert.assertEquals("* The maximum quantity allowed for purchase is 500.",errorMsg);
 				
 		}
 		catch(Exception e)
@@ -36,7 +36,8 @@ public class verifySonyXpheriaQuantity extends base {
 			e.printStackTrace();
 		}
 		sxp.emptyCart(driver).click();
-		String emptyShoppingCart=cp.getstatusShoppingCart(driver).getText();
+		Thread.sleep(1000);
+		String emptyShoppingCart=checkoutPage.getstatusShoppingCart(driver).getText();
 		System.out.println("The error msg for cart obtainetd is "+emptyShoppingCart);
 		try {
 			Assert.assertEquals("SHOPPING CART IS EMPTY",emptyShoppingCart);
@@ -46,15 +47,11 @@ public class verifySonyXpheriaQuantity extends base {
 		{
 			e.printStackTrace();
 		}
-		
+		cp.getMobLink(driver).click();
+		//driver.close();
 		
 		
 	}
-	@AfterTest
-	public void tearDown() throws Exception
-	{
-		Thread.sleep(1000);
-		driver.quit();
 	
-	}
+	
 }

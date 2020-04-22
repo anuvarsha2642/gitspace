@@ -82,10 +82,6 @@ public class verifyMobItemSorted extends base{
 		
 		
 	}
-/*	@AfterTest
-	public void tear_down()
-	{
-		driver.close();
-	}*/
+	
 	}
 

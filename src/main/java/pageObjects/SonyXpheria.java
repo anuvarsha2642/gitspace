@@ -9,7 +9,7 @@ static By  quantitySelectBox=By.xpath("//input[@title='Qty']");
 static By addToCart=By.cssSelector(".btn-cart");
 static By updateCart=By.xpath("//button[@title='Update']");
 static By  emptyCart=By.xpath("//*[@id=\"empty_cart_button\"]/span/span");
-static By errorOverCapacityMsg=By.xpath("//*[@id=\"top\"]/body/div/div/div[2]/div/div/div/ul/li/ul/li/span");
+static By errorOverCapacityMsg=By.cssSelector(".item-msg ");
 
 public static WebElement getquantitySelectBox(WebDriver driver)
 {

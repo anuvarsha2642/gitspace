@@ -32,7 +32,5 @@ public class verifySonyXperiaPrice extends base{
 		//System.out.println("price in sonyxperiapage"+priceInXperiaPage);
 		Assert.assertEquals("Prices not Matching",priceInMobPage, priceInXperiaPage);
 		//driver.close();
-	}
-	
-		
+	}	
 	}

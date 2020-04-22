@@ -8,6 +8,17 @@
           <include name="verifyingQuantityOverCapacity"/>
         </methods>
       </class> <!-- Guru99.verifySonyXpheriaQuantity -->
+      <class name="Guru99.verifySonyXperiaPrice">
+        <methods>
+          <include name="RetrieveSonyXperiaPrice"/>
+        </methods>
+      </class> <!-- Guru99.verifySonyXperiaPrice -->
+      <class name="Guru99.verifyTwoMobileToCompare">
+        <methods>
+          <include name="addingmobilesToCompare"/>
+          <include name="launchingBrowser"/>
+        </methods>
+      </class> <!-- Guru99.verifyTwoMobileToCompare -->
     </classes>
   </test> <!-- all-tests(failed) -->
 </suite> <!-- Failed suite [Suite1] -->

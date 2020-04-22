@@ -3,8 +3,13 @@
 
 <suite name="Suite1" verbose="1">
     <test name="all-tests">
-        <packages>
-            <package name="Guru99.*"/>
-        </packages>
+      <classes>
+      	<class name="Guru99.verifyMobItemSorted" />
+      	<class name="Guru99.verifySonyXperiaPrice"/>
+      	<class name="Guru99.verifySonyXpheriaQuantity"/>
+      	<class name="Guru99.verifyTwoMobileToCompare"/>
+      
+		
+      </classes>
     </test>
 </suite>
