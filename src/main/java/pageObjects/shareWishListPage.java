@@ -8,7 +8,7 @@ public class shareWishListPage {
 	static By  buttonShareWishList=By.cssSelector(".btn-share");
 	static By  emailAddressTextBox=By.id("email_address");
 	static By  messageTextBox=By.id("message");
-	static By  shareWishListButton=By.cssSelector(".buttons-set >.button");
+	static By  shareWishListButton=By.xpath("//button[@title='Share Wishlist']");
 	static By  shareWishListSuccessMsg=By.cssSelector("li > span");
 	
 	public static WebElement getButtonShareWishList(WebDriver driver)

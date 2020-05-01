@@ -6,7 +6,10 @@ import java.util.Set;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
@@ -21,7 +24,7 @@ public class verifyTwoMobileToCompare extends base {
 
 	MobilePage mp=new MobilePage();
 	MobilePopUpWindow mpw= new MobilePopUpWindow();
-	@BeforeTest
+	@BeforeClass
 	//// 1. Go to mobile menu http://live.demoguru99.com/
 	public static void launchingBrowser() throws IOException
 	{
@@ -33,16 +36,15 @@ public class verifyTwoMobileToCompare extends base {
     // 3. In mobile products list , click on ‘Add To Compare’ for 2 mobiles (Iphone &SamsungGalaxy)
 	public void addingmobilesToCompare() throws InterruptedException, IOException
 	{
-		
+		WebDriverWait wait=new WebDriverWait(driver, 20);
 	
 		System.out.println("In mobile page , to verify ifTwo mobilescan be compared");
-		
-		mp.addSonyxpheriaToCompare(driver).click();
-		mp.addIphoneToComapre(driver).click();
+		 wait.until(ExpectedConditions.visibilityOf(mp.addSonyxpheriaToCompare(driver))).click();
+		 wait.until(ExpectedConditions.visibilityOf(mp.addIphoneToComapre(driver))).click();
 		  // 4. Click on ‘COMPARE’ button. A popup window opens
-		mp.getCompareButton(driver).click();
-		Thread.sleep(1000);
-		//Handling new window
+		 wait.until(ExpectedConditions.visibilityOf(mp.getCompareButton(driver))).click();
+		
+		//********Handling new window************************
 		Set<String> handle = driver.getWindowHandles();
 		 Iterator iterator =handle.iterator();
 		 String parentWindowId=(String) iterator.next();
@@ -52,10 +54,10 @@ public class verifyTwoMobileToCompare extends base {
 			
 		 driver.switchTo().window(childWindowId);
 		 Thread.sleep(1000);
-		 String samsungText=mpw.getSamsungGalaxy(driver).getText();
-		 System.out.println("samsungtextname"+samsungText);
+		 String sonyXpheriaText=mpw.getSonyXpheria(driver).getText();
+		 System.out.println("sonyXpheriaText"+sonyXpheriaText);
 		 try {
-			Assert.assertEquals("SAMSUNG GALAXY",samsungText);
+			Assert.assertEquals("SONY XPERIA",sonyXpheriaText);
 					
 			}
 		catch(Exception e)
@@ -74,9 +76,11 @@ public class verifyTwoMobileToCompare extends base {
 		{
 			e.printStackTrace();
 		}
+		Thread.sleep(1000);
+		System.out.println("closing driver verify two mobiles to compare");
 		driver.close();
 		driver.switchTo().window(parentWindowId).close();
-		driver.quit();
+		
 	}
 		
 }

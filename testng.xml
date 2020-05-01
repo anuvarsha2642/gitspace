@@ -1,13 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 
-<suite name="Suite1" verbose="1">
-    <test name="all-tests">
+
+<suite name="TestSuite" thread-count="1" parallel="false" >
+
+<listeners>
+<listener class-name="utils.listeners"/>
+</listeners>
+    <test name="all-tests" preserve-order="true">
       <classes>
-      	<class name="Guru99.verifyMobItemSorted" />
-      	<class name="Guru99.verifySonyXperiaPrice"/>
-      	<class name="Guru99.verifySonyXpheriaQuantity"/>
-      	<class name="Guru99.verifyTwoMobileToCompare"/>
+      	<class name="Guru99.verifyMobItemSorted"/>
+       	<class name="Guru99.verifyTwoMobileToCompare" />
+      	<class name="Guru99.verifyAccountCreation" />
+      
       
 		
       </classes>

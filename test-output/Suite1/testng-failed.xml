@@ -3,22 +3,14 @@
 <suite name="Failed suite [Suite1]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="all-tests(failed)">
     <classes>
-      <class name="Guru99.verifySonyXpheriaQuantity">
+      <class name="Guru99.verifyAccountCreation">
         <methods>
-          <include name="verifyingQuantityOverCapacity"/>
-        </methods>
-      </class> <!-- Guru99.verifySonyXpheriaQuantity -->
-      <class name="Guru99.verifySonyXperiaPrice">
-        <methods>
-          <include name="RetrieveSonyXperiaPrice"/>
-        </methods>
-      </class> <!-- Guru99.verifySonyXperiaPrice -->
-      <class name="Guru99.verifyTwoMobileToCompare">
-        <methods>
-          <include name="addingmobilesToCompare"/>
           <include name="launchingBrowser"/>
+          <include name="creatingNewAccount"/>
+          <include name="addingTvToWishlist"/>
+          <include name="registeringNewUser"/>
         </methods>
-      </class> <!-- Guru99.verifyTwoMobileToCompare -->
+      </class> <!-- Guru99.verifyAccountCreation -->
     </classes>
   </test> <!-- all-tests(failed) -->
 </suite> <!-- Failed suite [Suite1] -->

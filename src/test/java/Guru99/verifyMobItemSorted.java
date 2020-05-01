@@ -15,6 +15,7 @@ import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
@@ -25,7 +26,7 @@ import utils.base;
 public class verifyMobItemSorted extends base{
 	MagentoPage mhp=new MagentoPage();
 	
-	@BeforeTest
+	@BeforeClass
 	public static void launchingBrowser() throws IOException
 	{
 	driver=initialiseBrowser(driver,"Chrome");
@@ -51,7 +52,7 @@ public class verifyMobItemSorted extends base{
 	public void verifyItemInMobList() throws IOException, InterruptedException
 	{
 		System.out.println("In verifyMobitemsorted3");
-		String downloadPath=System.getProperty("user.dir");
+	
 		System.out.println("Trying to invoke NAme from select box");
 		//WebElement mobSelectBox=landingMobilePageObjects.getMobSelectBox(driver);
 		Select select= new Select(driver.findElement(By.cssSelector("select[title=\"Sort By\"]")));
@@ -75,13 +76,21 @@ public class verifyMobItemSorted extends base{
 		{
 			System.out.println(re);
 		}
-	File src=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-	FileUtils.copyFile(src, new File(downloadPath+"/screenshot.png"));
+	 
 		Assert.assertTrue(sortedList.equals(obtainedList));
 //	Thread.sleep(1000);
 		
+		System.out.println("closing driver verify mobile item sorted");
+		
+		
 		
 	}
+	@AfterClass (alwaysRun=true)
+	public void tearDown()
+	{
+		driver.close();
+	}
+	
 	
 	}
 

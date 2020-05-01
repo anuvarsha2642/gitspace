@@ -48,7 +48,7 @@ public class verifySonyXpheriaQuantity extends base {
 			e.printStackTrace();
 		}
 		cp.getMobLink(driver).click();
-		//driver.close();
+		driver.close();
 		
 		
 	}

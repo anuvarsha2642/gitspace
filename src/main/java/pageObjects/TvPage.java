@@ -5,7 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 public class TvPage {
-	static By  tvTab=By.linkText("linkText=TV");
+	static By  tvTab=By.xpath("//*[@id=\"nav\"]/ol/li[2]/a");
 	static By  addToWishList=By.linkText("Add to Wishlist");
 	
 	public static WebElement getAddToWishListTab(WebDriver driver)

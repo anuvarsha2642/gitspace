@@ -52,7 +52,7 @@ public class RegistrationPage {
 		System.out.println("In checkout page , retrieveing submitButton");
 		return driver.findElement(submitButton);
 	}
-	public static WebElement msgRegistrationConfirmation(WebDriver driver)
+	public static WebElement getMsgRegistrationConfirmation(WebDriver driver)
 	{
 		System.out.println("After Registration ,retrieving success message");
 		return driver.findElement(msgRegistrationConfirmation);

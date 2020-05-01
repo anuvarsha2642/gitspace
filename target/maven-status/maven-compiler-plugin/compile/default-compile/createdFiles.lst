@@ -1,0 +1,10 @@
+Guru99\App.class
+pageObjects\MobilePage.class
+pageObjects\shareWishListPage.class
+pageObjects\MagentoPage.class
+utils\base.class
+pageObjects\checkoutPage.class
+pageObjects\SonyXpheria.class
+pageObjects\MobilePopUpWindow.class
+pageObjects\RegistrationPage.class
+pageObjects\TvPage.class
