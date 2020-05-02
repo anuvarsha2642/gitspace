@@ -57,9 +57,10 @@ public void getScreenShotOnFailure(String name) throws IOException
 {
 
 	String downloadPath=System.getProperty("user.dir");
+	System.out.println(name);
 	System.out.println("The download path is" +downloadPath);
 	File src=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-	FileUtils.copyFile(src, new File(downloadPath+"screenshot.png"));
+	FileUtils.copyFile(src, new File(downloadPath+"\\"+name+"screenshot.png"));
 }
  
 }

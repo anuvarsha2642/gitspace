@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2020-05-02T13:21:18 MST" name="TestSuite" finished-at="2020-05-02T13:22:44 MST" duration-ms="85499">
+    <groups>
+    </groups>
+    <test started-at="2020-05-02T13:21:18 MST" name="all-tests" finished-at="2020-05-02T13:22:44 MST" duration-ms="85499">
+      <class name="Guru99.verifyTwoMobileToCompare">
+        <test-method is-config="true" signature="launchingBrowser()[pri:0, instance:Guru99.verifyTwoMobileToCompare@4c1909a3]" started-at="2020-05-02T13:21:31 MST" name="launchingBrowser" finished-at="2020-05-02T13:21:43 MST" duration-ms="11379" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchingBrowser -->
+        <test-method signature="addingmobilesToCompare()[pri:0, instance:Guru99.verifyTwoMobileToCompare@4c1909a3]" started-at="2020-05-02T13:21:43 MST" name="addingmobilesToCompare" finished-at="2020-05-02T13:21:54 MST" duration-ms="11438" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addingmobilesToCompare -->
+      </class> <!-- Guru99.verifyTwoMobileToCompare -->
+      <class name="Guru99.verifyMobItemSorted">
+        <test-method is-config="true" signature="launchingBrowser()[pri:0, instance:Guru99.verifyMobItemSorted@4b0d79fc]" started-at="2020-05-02T13:21:18 MST" name="launchingBrowser" finished-at="2020-05-02T13:21:27 MST" duration-ms="8780" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchingBrowser -->
+        <test-method signature="verifyMobTitlePage()[pri:1, instance:Guru99.verifyMobItemSorted@4b0d79fc]" started-at="2020-05-02T13:21:27 MST" name="verifyMobTitlePage" finished-at="2020-05-02T13:21:30 MST" duration-ms="3064" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyMobTitlePage -->
+        <test-method signature="verifyItemInMobList()[pri:2, instance:Guru99.verifyMobItemSorted@4b0d79fc]" started-at="2020-05-02T13:21:30 MST" name="verifyItemInMobList" finished-at="2020-05-02T13:21:31 MST" duration-ms="1092" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyItemInMobList -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Guru99.verifyMobItemSorted@4b0d79fc]" started-at="2020-05-02T13:21:31 MST" name="tearDown" finished-at="2020-05-02T13:21:31 MST" duration-ms="73" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Guru99.verifyMobItemSorted -->
+      <class name="Guru99.verifyAccountCreation">
+        <test-method is-config="true" signature="launchingBrowser()[pri:0, instance:Guru99.verifyAccountCreation@428640fa]" started-at="2020-05-02T13:21:54 MST" name="launchingBrowser" finished-at="2020-05-02T13:22:15 MST" duration-ms="20958" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchingBrowser -->
+        <test-method signature="creatingNewAccount()[pri:0, instance:Guru99.verifyAccountCreation@428640fa]" started-at="2020-05-02T13:22:15 MST" name="creatingNewAccount" finished-at="2020-05-02T13:22:16 MST" duration-ms="599" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- creatingNewAccount -->
+        <test-method signature="registeringNewUser()[pri:1, instance:Guru99.verifyAccountCreation@428640fa]" started-at="2020-05-02T13:22:16 MST" name="registeringNewUser" finished-at="2020-05-02T13:22:28 MST" duration-ms="12486" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registeringNewUser -->
+        <test-method signature="addingTvToWishlist()[pri:0, instance:Guru99.verifyAccountCreation@428640fa]" started-at="2020-05-02T13:22:28 MST" name="addingTvToWishlist" finished-at="2020-05-02T13:22:44 MST" depends-on-methods="Guru99.verifyAccountCreation.registeringNewUser" duration-ms="15595" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addingTvToWishlist -->
+      </class> <!-- Guru99.verifyAccountCreation -->
+    </test> <!-- all-tests -->
+  </suite> <!-- TestSuite -->
+</testng-results>

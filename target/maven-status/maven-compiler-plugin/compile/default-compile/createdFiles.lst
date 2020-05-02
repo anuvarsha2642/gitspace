@@ -1,6 +1,8 @@
 Guru99\App.class
 pageObjects\MobilePage.class
 pageObjects\shareWishListPage.class
+utils\listeners.class
+utils\ExtentReporterNG.class
 pageObjects\MagentoPage.class
 utils\base.class
 pageObjects\checkoutPage.class

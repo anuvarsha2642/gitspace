@@ -6,6 +6,9 @@
 
 <listeners>
 <listener class-name="utils.listeners"/>
+
+<listener class-name="utils.ExtentReporterNG"/>
+
 </listeners>
     <test name="all-tests" preserve-order="true">
       <classes>

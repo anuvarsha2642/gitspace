@@ -1,53 +1,91 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+<testng-results ignored="0" total="6" passed="5" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-04-28T12:03:59 MST" name="TestSuite" finished-at="2020-04-28T12:04:41 MST" duration-ms="41762">
+  <suite started-at="2020-05-01T16:38:47 MST" name="TestSuite" finished-at="2020-05-01T16:39:30 MST" duration-ms="43416">
     <groups>
     </groups>
-    <test started-at="2020-04-28T12:03:59 MST" name="all-tests" finished-at="2020-04-28T12:04:41 MST" duration-ms="41762">
+    <test started-at="2020-05-01T16:38:47 MST" name="all-tests" finished-at="2020-05-01T16:39:30 MST" duration-ms="43416">
       <class name="Guru99.verifyTwoMobileToCompare">
-        <test-method is-config="true" signature="launchingBrowser()[pri:0, instance:Guru99.verifyTwoMobileToCompare@217ed35e]" started-at="2020-04-28T12:04:09 MST" name="launchingBrowser" finished-at="2020-04-28T12:04:16 MST" duration-ms="7391" status="PASS">
+        <test-method is-config="true" signature="launchingBrowser()[pri:0, instance:Guru99.verifyTwoMobileToCompare@6f03482]" started-at="2020-05-01T16:39:03 MST" name="launchingBrowser" finished-at="2020-05-01T16:39:10 MST" duration-ms="6637" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchingBrowser -->
-        <test-method signature="addingmobilesToCompare()[pri:0, instance:Guru99.verifyTwoMobileToCompare@217ed35e]" started-at="2020-04-28T12:04:16 MST" name="addingmobilesToCompare" finished-at="2020-04-28T12:04:25 MST" duration-ms="8762" status="PASS">
+        <test-method signature="addingmobilesToCompare()[pri:0, instance:Guru99.verifyTwoMobileToCompare@6f03482]" started-at="2020-05-01T16:39:10 MST" name="addingmobilesToCompare" finished-at="2020-05-01T16:39:16 MST" duration-ms="5741" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addingmobilesToCompare -->
       </class> <!-- Guru99.verifyTwoMobileToCompare -->
       <class name="Guru99.verifyMobItemSorted">
-        <test-method is-config="true" signature="launchingBrowser()[pri:0, instance:Guru99.verifyMobItemSorted@682b2fa]" started-at="2020-04-28T12:03:59 MST" name="launchingBrowser" finished-at="2020-04-28T12:04:07 MST" duration-ms="7716" status="PASS">
+        <test-method is-config="true" signature="launchingBrowser()[pri:0, instance:Guru99.verifyMobItemSorted@185a6e9]" started-at="2020-05-01T16:38:47 MST" name="launchingBrowser" finished-at="2020-05-01T16:38:54 MST" duration-ms="7281" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchingBrowser -->
-        <test-method signature="verifyMobTitlePage()[pri:1, instance:Guru99.verifyMobItemSorted@682b2fa]" started-at="2020-04-28T12:04:07 MST" name="verifyMobTitlePage" finished-at="2020-04-28T12:04:08 MST" duration-ms="1654" status="PASS">
+        <test-method signature="verifyMobTitlePage()[pri:1, instance:Guru99.verifyMobItemSorted@185a6e9]" started-at="2020-05-01T16:38:54 MST" name="verifyMobTitlePage" finished-at="2020-05-01T16:38:56 MST" duration-ms="2001" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyMobTitlePage -->
-        <test-method signature="verifyItemInMobList()[pri:2, instance:Guru99.verifyMobItemSorted@682b2fa]" started-at="2020-04-28T12:04:08 MST" name="verifyItemInMobList" finished-at="2020-04-28T12:04:09 MST" duration-ms="593" status="PASS">
+        <test-method signature="verifyItemInMobList()[pri:2, instance:Guru99.verifyMobItemSorted@185a6e9]" started-at="2020-05-01T16:38:56 MST" name="verifyItemInMobList" finished-at="2020-05-01T16:38:58 MST" duration-ms="1664" status="FAIL">
+          <exception class="junit.framework.AssertionFailedError">
+            <full-stacktrace>
+              <![CDATA[junit.framework.AssertionFailedError
+at junit.framework.Assert.fail(Assert.java:47)
+at junit.framework.Assert.assertTrue(Assert.java:20)
+at junit.framework.Assert.assertTrue(Assert.java:27)
+at Guru99.verifyMobItemSorted.verifyItemInMobList(verifyMobItemSorted.java:80)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1507)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- junit.framework.AssertionFailedError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyItemInMobList -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Guru99.verifyMobItemSorted@682b2fa]" started-at="2020-04-28T12:04:09 MST" name="tearDown" finished-at="2020-04-28T12:04:09 MST" duration-ms="127" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Guru99.verifyMobItemSorted@185a6e9]" started-at="2020-05-01T16:38:59 MST" name="tearDown" finished-at="2020-05-01T16:39:03 MST" duration-ms="4536" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- Guru99.verifyMobItemSorted -->
       <class name="Guru99.verifyAccountCreation">
-        <test-method is-config="true" signature="launchingBrowser()[pri:0, instance:Guru99.verifyAccountCreation@7dcf94f8]" started-at="2020-04-28T12:04:25 MST" name="launchingBrowser" finished-at="2020-04-28T12:04:34 MST" duration-ms="8908" status="PASS">
+        <test-method is-config="true" signature="launchingBrowser()[pri:0, instance:Guru99.verifyAccountCreation@9d5509a]" started-at="2020-05-01T16:39:16 MST" name="launchingBrowser" finished-at="2020-05-01T16:39:22 MST" duration-ms="6842" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchingBrowser -->
-        <test-method signature="creatingNewAccount()[pri:0, instance:Guru99.verifyAccountCreation@7dcf94f8]" started-at="2020-04-28T12:04:34 MST" name="creatingNewAccount" finished-at="2020-04-28T12:04:34 MST" duration-ms="461" status="PASS">
+        <test-method signature="creatingNewAccount()[pri:0, instance:Guru99.verifyAccountCreation@9d5509a]" started-at="2020-05-01T16:39:22 MST" name="creatingNewAccount" finished-at="2020-05-01T16:39:23 MST" duration-ms="500" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- creatingNewAccount -->
-        <test-method signature="registeringNewUser()[pri:1, instance:Guru99.verifyAccountCreation@7dcf94f8]" started-at="2020-04-28T12:04:34 MST" name="registeringNewUser" finished-at="2020-04-28T12:04:37 MST" duration-ms="2994" status="PASS">
+        <test-method signature="registeringNewUser()[pri:1, instance:Guru99.verifyAccountCreation@9d5509a]" started-at="2020-05-01T16:39:23 MST" name="registeringNewUser" finished-at="2020-05-01T16:39:27 MST" duration-ms="4404" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- registeringNewUser -->
-        <test-method signature="addingTvToWishlist()[pri:0, instance:Guru99.verifyAccountCreation@7dcf94f8]" started-at="2020-04-28T12:04:37 MST" name="addingTvToWishlist" finished-at="2020-04-28T12:04:41 MST" depends-on-methods="Guru99.verifyAccountCreation.registeringNewUser" duration-ms="3110" status="PASS">
+        <test-method signature="addingTvToWishlist()[pri:0, instance:Guru99.verifyAccountCreation@9d5509a]" started-at="2020-05-01T16:39:27 MST" name="addingTvToWishlist" finished-at="2020-05-01T16:39:30 MST" depends-on-methods="Guru99.verifyAccountCreation.registeringNewUser" duration-ms="3060" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addingTvToWishlist -->
