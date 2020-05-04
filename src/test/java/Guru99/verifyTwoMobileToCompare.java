@@ -28,7 +28,7 @@ public class verifyTwoMobileToCompare extends base {
 	//// 1. Go to mobile menu http://live.demoguru99.com/
 	public static void launchingBrowser() throws IOException
 	{
-	driver=initialiseBrowser(driver,"Chrome");
+	driver=initialiseBrowser(driver);
 	driver.get("http://live.demoguru99.com/index.php/mobile.html");
 	System.out.println("In verifyTwoMobileToCompare");
 	}

@@ -7,13 +7,28 @@
   </listeners>
   <test thread-count="1" name="all-tests(failed)" verbose="0">
     <classes>
+      <class name="Guru99.verifyTwoMobileToCompare">
+        <methods>
+          <include name="addingmobilesToCompare"/>
+          <include name="launchingBrowser"/>
+        </methods>
+      </class> <!-- Guru99.verifyTwoMobileToCompare -->
       <class name="Guru99.verifyAccountCreation">
         <methods>
           <include name="launchingBrowser"/>
+          <include name="creatingNewAccount"/>
           <include name="addingTvToWishlist"/>
           <include name="registeringNewUser"/>
         </methods>
       </class> <!-- Guru99.verifyAccountCreation -->
+      <class name="Guru99.verifyMobItemSorted">
+        <methods>
+          <include name="verifyMobTitlePage"/>
+          <include name="tearDown"/>
+          <include name="verifyItemInMobList"/>
+          <include name="launchingBrowser"/>
+        </methods>
+      </class> <!-- Guru99.verifyMobItemSorted -->
     </classes>
   </test> <!-- all-tests(failed) -->
 </suite> <!-- Failed suite [TestSuite] -->

@@ -30,7 +30,7 @@ public class verifyAccountCreation extends base {
 	public static void launchingBrowser() throws IOException
 	{
 		System.out.println("Launching browser in verify account creation testcase");
-	driver=initialiseBrowser(driver,"Chrome");
+	driver=initialiseBrowser(driver);
 	driver.get(prop.getProperty("magentoUrl"));	
 	System.out.println("In verifyMobitemsorted");
 	}

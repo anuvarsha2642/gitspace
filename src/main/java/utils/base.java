@@ -21,12 +21,16 @@ public class base {
 public static Properties prop;
 public static WebDriver driver;
 	
-public static WebDriver initialiseBrowser(WebDriver driver,String browsername) throws IOException
+public static WebDriver initialiseBrowser(WebDriver driver) throws IOException
 {
 	prop=new Properties();
 	FileInputStream fis=new FileInputStream("C:\\Users\\anuva\\Downloads\\MagentoProject\\config.properties");
 	prop.load(fis);
-	if(browsername.equalsIgnoreCase("Chrome"))
+	String browsername=System.getProperty("browser");
+	
+	//String browsername="IE";
+	System.out.println(browsername);
+	if(browsername.equalsIgnoreCase("chrome"))
 	{
 		/*String downloadPath=System.getProperty("user.dir");
 		HashMap<String,Object> chromePrefs=new HashMap<String,Object>();
@@ -37,14 +41,16 @@ public static WebDriver initialiseBrowser(WebDriver driver,String browsername) t
 		System.setProperty("webdriver.chrome.driver",prop.getProperty("chromeLocation"));
 		driver=new ChromeDriver();
 	}
-	else if(browsername=="IE")
+	else if(browsername.equalsIgnoreCase("IE"))
 	{
-		System.setProperty("webdriver.ie.driver", prop.getProperty("IElocation"));
+		System.out.println("In Internet Explorer");
+		System.setProperty("webdriver.ie.driver", "C:\\\\Users\\\\anuva\\\\Downloads\\\\Browserexe\\\\IEDriverServer_x64_2.48.0\\\\IEDriverServer.exe");
 		 driver = new InternetExplorerDriver();
 	}
-	else if(browsername=="firefox")
+	else if(browsername.equalsIgnoreCase("firefox"))
 	{
-		System.setProperty("webdriver.gecko.driver",prop.getProperty("Firefoxlocation"));
+		System.setProperty("webdriver.gecko.driver","C:\\Users\\anuva\\Downloads\\geckodriver-v0.26.0-win64\\geckodriver.exe");
+		
 		 driver = new FirefoxDriver();
 	}
 	driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);

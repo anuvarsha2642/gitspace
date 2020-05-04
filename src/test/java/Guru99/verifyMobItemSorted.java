@@ -29,7 +29,7 @@ public class verifyMobItemSorted extends base{
 	@BeforeClass
 	public static void launchingBrowser() throws IOException
 	{
-	driver=initialiseBrowser(driver,"Chrome");
+	driver=initialiseBrowser(driver);
 	driver.get(prop.getProperty("magentoUrl"));	
 	System.out.println("In verifyMobitemsorted");
 	}
